@@ -62,5 +62,6 @@ _(Replace with your GitHub Pages or CodePen link)_
 Clone the repository:
 
 ```bash
-git clone [https://github.com/DINESH2841/NPTEL-Assignment-Score-Calculator2.0].git
-cd nptel-score-calculator
+git clone https://github.com/DINESH2841/NPTEL-Assignment-Score-Calculator2.0.git
+cd NPTEL-Assignment-Score-Calculator2.0
+
