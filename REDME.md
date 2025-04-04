@@ -12,6 +12,7 @@ A slick React + Tailwind web app to **calculate your final NPTEL score** based o
 - ✅ **Live Calculations** – Real-time result updates  
 - ✅ **Smart Validation** – Prevents wrong inputs  
 - ✅ **Certificate Eligibility Checker**  
+- ✅ **Auto Certificate Type Detection**  
 - ✅ **Responsive & Offline-Ready**  
 - ✅ **Built with React + Vite** – Fast & lightweight
 
@@ -23,7 +24,7 @@ A slick React + Tailwind web app to **calculate your final NPTEL score** based o
 2. Enter your **assignment marks** (comma-separated)
 3. Enter your **exam score** (out of 100)
 4. Click **“Calculate Final Score”**
-5. See the breakdown + eligibility status instantly!
+5. See your final score, certificate eligibility, and exact certificate type!
 
 ---
 
@@ -34,21 +35,36 @@ A slick React + Tailwind web app to **calculate your final NPTEL score** based o
   - 8 weeks → best **6** scores
   - 12 weeks → best **8** scores
 
-- **Final Score**  
+- **Final Score Formula**  
   `Final = (Assignment × 0.25) + (Exam × 0.75)`
-
-- **Eligibility Rules**
-  - Assignment ≥ **10/25**
-  - Exam ≥ **30/75**
-  - Final Score ≥ **40/100**
 
 ---
 
-## 🚀 Try It Out
+## 🏆 Eligibility & Certificate Type
+
+To be eligible for a certificate:
+
+- 🟢 **Assignment Score** ≥ 10 / 25  
+- 🟢 **Exam Score** ≥ 30 / 75  
+- 🟢 **Final Score** ≥ 40 / 100  
+
+Once eligible, your **certificate type** is decided by final score:
+
+| Final Score     | Certificate Type        |
+|------------------|-------------------------|
+| `≥ 90`           | 🥇 **Elite + Gold**      |
+| `75 - 89`        | 🥈 **Elite + Silver**    |
+| `60 - 74`        | 🟦 **Elite**             |
+| `40 - 59`        | ✅ **Successfully Completed** |
+| `< 40` or not eligible | ❌ **No Certificate**    |
+
+---
+
+## 🚀 Try It Live
 
 👉 [**Launch Web App**](https://dinesh2841.github.io/NPTEL-Assignment-Score-Calculator2.0/)
 
-> No login. No data tracking. Just scores. 🔐
+> No login. No tracking. Just real results.
 
 ---
 
@@ -60,8 +76,8 @@ A slick React + Tailwind web app to **calculate your final NPTEL score** based o
 | Tailwind   | Utility-first styling        |
 | ShadCN UI  | Prebuilt UI components       |
 | Lucide     | Icon set                     |
-| Framer Motion | Animations               |
-| Vite       | Lightning-fast dev/build     |
+| Framer Motion | Smooth animations         |
+| Vite       | Fast dev & build pipeline    |
 
 ---
 
