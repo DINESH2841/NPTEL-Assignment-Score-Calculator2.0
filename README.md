@@ -1,8 +1,8 @@
 # 📊 NPTEL Assignment Score Calculator
 
 A simple, responsive web-based tool to **calculate your final NPTEL course score** based on your assignment and exam marks. It also checks **certificate eligibility** based on NPTEL's official criteria.
+![Demo Screenshot]([https://raw.githubusercontent.com/yourusername/repo/main/preview_screenshot.png](https://github.com/DINESH2841/NPTEL-Assignment-Score-Calculator2.0/blob/main/preview_screenshot.png))
 
-![Demo Screenshot](preview screenshot.png)
 
 
 <!-- Optional: Replace with actual screenshot -->
