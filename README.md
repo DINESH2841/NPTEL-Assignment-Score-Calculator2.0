@@ -1,4 +1,4 @@
-# 📊 NPTEL Assignment Score Calculator 3.0
+# 📊 NPTEL Assignment Score Calculator 2.0
 
 A slick React + Tailwind web app to **calculate your final NPTEL score** based on official grading rules. Fully client-side, responsive, and built with modern UI components using ShadCN and Lucide.
 
