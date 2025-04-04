@@ -6,7 +6,7 @@ A slick React + Tailwind web app to **calculate your final NPTEL score** based o
 
 ---
 🧠 Creator
-Made with 💙 by @DINESH2841(https://github.com/DINESH2841)
+Made with 💙 by [**@DINESH2841**](https://github.com/DINESH2841)
 ## 🌟 Features
 
 - ✅ **Modern Design** – Tailwind + ShadCN UI with dark mode  
