@@ -67,7 +67,8 @@
       font-size: 16px;
     }
 
-    select, input {
+    select,
+    input {
       width: 100%;
       padding: 12px;
       border: none;
@@ -83,7 +84,8 @@
       appearance: none;
     }
 
-    input:focus, select:focus {
+    input:focus,
+    select:focus {
       outline: none;
       box-shadow: 0 0 0 2px var(--primary-color);
       transform: scale(1.05);
@@ -125,9 +127,19 @@
       text-align: center;
     }
 
+    #result strong {
+      color: #f1c40f;
+    }
+
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
   </style>
 </head>
@@ -160,7 +172,7 @@
   </div>
 
   <script>
-    document.getElementById("scoreForm").addEventListener("submit", function(event) {
+    document.getElementById("scoreForm").addEventListener("submit", function (event) {
       event.preventDefault();
       calculateScore();
     });
@@ -173,9 +185,9 @@
       const assignmentError = document.getElementById("assignmentError");
       const examError = document.getElementById("examError");
 
-      // Reset errors
       assignmentError.textContent = "";
       examError.textContent = "";
+      result.innerHTML = "";
 
       if (!assignmentInput) {
         assignmentError.textContent = "Please enter assignment scores.";
@@ -186,14 +198,12 @@
         return;
       }
 
-      // Process assignment scores
       const assignmentScores = assignmentInput.split(",").map(s => parseFloat(s.trim()));
       if (assignmentScores.some(isNaN)) {
         assignmentError.textContent = "Only numeric values allowed (comma-separated).";
         return;
       }
 
-      // Sort and pick best scores
       assignmentScores.sort((a, b) => b - a);
       const bestCount = courseDuration === 4 ? 3 : courseDuration === 8 ? 6 : 8;
       const bestScores = assignmentScores.slice(0, bestCount);
@@ -203,9 +213,20 @@
       const examOutOf75 = (examScore / 100) * 75;
       const finalScore = assignmentOutOf25 + examOutOf75;
 
-      let eligibilityMsg = (assignmentOutOf25 >= 10 && examOutOf75 >= 30) 
-        ? "✅ Eligible for certificate!" 
-        : "❌ Not eligible for certificate.";
+      let eligibilityMsg = "";
+      if (assignmentOutOf25 >= 10 && examOutOf75 >= 30 && finalScore >= 40) {
+        if (finalScore >= 90) {
+          eligibilityMsg = "🏅 <strong>Certificate:</strong> Elite + Gold";
+        } else if (finalScore >= 75) {
+          eligibilityMsg = "🥈 <strong>Certificate:</strong> Elite + Silver";
+        } else if (finalScore >= 60) {
+          eligibilityMsg = "🎖️ <strong>Certificate:</strong> Elite";
+        } else {
+          eligibilityMsg = "✅ <strong>Certificate:</strong> Successfully Completed";
+        }
+      } else {
+        eligibilityMsg = "❌ <strong>Not eligible for certificate.</strong><br><small>Requirements: Assignment ≥ 10/25, Exam ≥ 30/75, Final ≥ 40/100</small>";
+      }
 
       result.innerHTML = `
         📊 <strong>Assignment Avg:</strong> ${avgAssignmentScore.toFixed(2)} / 100 <br>
