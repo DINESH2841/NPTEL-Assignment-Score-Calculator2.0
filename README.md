@@ -1,67 +1,68 @@
-# 📊 NPTEL Assignment Score Calculator
+# 📊 NPTEL Assignment Score Calculator 2.0
 
-A simple, responsive web-based tool to **calculate your final NPTEL course score** based on your assignment and exam marks. It also checks **certificate eligibility** based on NPTEL's official criteria.
+A sleek, fully client-side web app to **calculate your final NPTEL course score** based on your assignment and exam marks. It auto-checks **certificate eligibility** using NPTEL’s official rules — no backend, no fuss.  
 
 ![Demo Screenshot](https://github.com/DINESH2841/NPTEL-Assignment-Score-Calculator2.0/blob/main/preview_screenshot.png)
-
-
-
-<!-- Optional: Replace with actual screenshot -->
 
 ---
 
 ## 🌟 Features
 
-- ✅ **Modern UI** – Sleek, clean interface with responsive design  
-- ✅ **Dynamic Calculation** – Real-time score updates  
-- ✅ **Error Handling** – Input validation for user mistakes  
-- ✅ **Certificate Eligibility Checker** – Determines if you're qualified  
-- ✅ **100% Client-Side** – No backend, works instantly offline  
+✅ **Modern UI** – Clean, glassmorphism-inspired layout  
+✅ **Live Calculations** – Scores update as you type  
+✅ **Smart Validation** – Catches input errors instantly  
+✅ **Certificate Checker** – Tells you if you're eligible  
+✅ **100% Offline-Ready** – Runs entirely in your browser  
 
 ---
 
 ## 📌 How It Works
 
-1. **Select Course Duration**: 4, 8, or 12 weeks  
-2. **Enter Assignment Scores**: Comma-separated values (e.g. `85, 90, 78`)  
-3. **Enter Exam Score**: Out of 100  
-4. **Click “Calculate Final Score”**
-
-### 🎯 The App Calculates:
-- **Assignment Average** based on best scores:
-  - Top 3 for 4-week courses
-  - Top 6 for 8-week courses
-  - Top 8 for 12-week courses
-- **Final Score**:  
-  - Assignments = 25%  
-  - Exam = 75%
-- **Certificate Eligibility**:
-  - Min 10/25 in assignments  
-  - Min 30/75 in exam  
-  - Total ≥ 40/100
+1. **Pick Course Duration**: 4, 8, or 12 weeks  
+2. **Drop Your Assignment Marks**: Like `85, 90, 78, ...`  
+3. **Enter Your Exam Score**: Out of 100  
+4. **Click “Calculate Final Score”** – Boom, results 🔥
 
 ---
 
-## 🚀 Live Demo
+### 📐 Calculation Logic
 
-👉 **[Try it Live](https://dinesh2841.github.io/NPTEL-Assignment-Score-Calculator2.0/)**  
-_(Replace with your GitHub Pages or CodePen link)_
+- **Assignment Average** (Best of):
+  - 🟩 4 weeks → Best **3** assignments  
+  - 🟦 8 weeks → Best **6** assignments  
+  - 🟥 12 weeks → Best **8** assignments  
+
+- **Final Score**:
+  - 📘 Assignment Weight: `25%`  
+  - 📙 Exam Weight: `75%`
+
+- **Eligibility Criteria**:
+  - ✅ Min **10/25** in assignments  
+  - ✅ Min **30/75** in exam  
+  - ✅ Final total score ≥ **40/100**
+
+---
+
+## 🚀 Try It Live
+
+👉 [**Launch Web App**](https://dinesh2841.github.io/NPTEL-Assignment-Score-Calculator2.0/)  
+_(Built with love & logic – no login, no data tracking!)_
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Semantic markup  
-- **CSS3** – Modern styling with glassmorphism  
-- **JavaScript** – Core logic + validations
+- **HTML5** – Clean semantic structure  
+- **CSS3** – Glassmorphism styling & responsive layout  
+- **JavaScript (Vanilla)** – Logic, calculations, validation
 
 ---
 
-## 📥 Installation
+## 💻 Local Installation
 
-Clone the repository:
+Want to run it offline? Easy:
 
 ```bash
 git clone https://github.com/DINESH2841/NPTEL-Assignment-Score-Calculator2.0.git
 cd NPTEL-Assignment-Score-Calculator2.0
-
+open index.html   # Or just double-click the file
