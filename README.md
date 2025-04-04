@@ -44,7 +44,7 @@ A simple, responsive web-based tool to **calculate your final NPTEL course score
 
 ## 🚀 Live Demo
 
-👉 **[Try it Live]([https://yourusername.github.io/nptel-score-calculator/](https://dinesh2841.github.io/NPTEL-Assignment-Score-Calculator2.0/))**  
+👉 **[Try it Live](https://dinesh2841.github.io/NPTEL-Assignment-Score-Calculator2.0/)**  
 _(Replace with your GitHub Pages or CodePen link)_
 
 ---
